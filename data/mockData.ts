@@ -11,7 +11,8 @@ const COUNTRIES = [
   { name: 'Japan', code: 'JP' },
   { name: 'South Korea', code: 'KR' },
   { name: 'Italy', code: 'IT' },
-  { name: 'Spain', code: 'ES' }
+  { name: 'Spain', code: 'ES' },
+  { name: 'Kerala',code:'KL'}
 ];
 
 const MONTHS = [
