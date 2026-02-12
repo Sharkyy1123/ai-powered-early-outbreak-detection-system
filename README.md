@@ -1,18 +1,48 @@
+#AI-Powered Early Outbreak Detection System
+#Overview
 
+This project implements an AI-based early outbreak detection system using anomaly detection techniques. The system analyzes real-world COVID-19 case data to identify abnormal spikes in daily infections and generate an outbreak risk score.
 
-# Run and deploy your AI Studio app
+Traditional disease surveillance systems are often reactive and depend on confirmed clinical reports. This project demonstrates how machine learning models can detect unusual patterns earlier by identifying deviations from normal case trends.
 
-This contains everything you need to run your app locally.
+#Objective
 
-View your app in AI Studio: https://ai.studio/apps/drive/1CtHYtddJqc1ygSyBuFx-A8veyc4dfcVI
+The objective of this project is to simulate an early warning system capable of:
 
-## Run Locally
+Detecting abnormal increases in daily case counts
 
-**Prerequisites:**  Node.js
+Learning baseline disease patterns
 
+Generating a dynamic outbreak risk score
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+Providing results through a web-based dashboard
+
+System Architecture
+
+Data ingestion from a COVID-19 dataset (CSV format)
+
+Data preprocessing and filtering by country
+
+Training an Isolation Forest anomaly detection model
+
+Saving the trained model using Pickle
+
+Serving predictions through a Flask API
+
+Displaying results on a frontend dashboard using Chart.js
+
+Technologies Used
+
+Python
+
+Flask
+
+Scikit-learn
+
+Pandas
+
+Pickle
+
+HTML/CSS
+
+Chart.js
